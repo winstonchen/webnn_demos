@@ -1,4 +1,4 @@
-import { isWebNN } from "/js/utils.js";
+import { isWebNN } from "./utils.js";
 
 const webnnlogo = () => {
   const nnlogo = `

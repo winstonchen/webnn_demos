@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from './utils.js';
 
 /* eslint max-len: ["error", {"code": 120}] */
 

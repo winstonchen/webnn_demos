@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from './utils.js';
 
 const autoPad = 'same-upper';
 const strides = [2, 2];

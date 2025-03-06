@@ -1,7 +1,7 @@
 'use strict';
 
-import {numpy} from '/js/numpy.js';
-import {addAlert} from '/js/ui.js';
+import {numpy} from './numpy.js';
+import {addAlert} from './ui.js';
 
 export function weightsOrigin() {
   if (location.hostname.toLowerCase().indexOf('github.io') > -1) {

@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, weightsOrigin} from './utils.js';
 
 // MobileNet V2 model with 'nchw' input layout
 export class MobileNetV2Nchw {

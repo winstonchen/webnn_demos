@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from './utils.js';
 
 // SqueezeNet 1.0 model with 'nhwc' layout
 export class SqueezeNetNhwc {

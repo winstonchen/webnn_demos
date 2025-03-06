@@ -1,16 +1,16 @@
 'use strict';
 
-import {TinyYoloV2Nchw} from '/js/tiny_yolov2_nchw.js';
-import {TinyYoloV2Nhwc} from '/js/tiny_yolov2_nhwc.js';
-import {SsdMobilenetV1Nchw} from '/js/ssd_mobilenetv1_nchw.js';
-import {SsdMobilenetV1Nhwc} from '/js/ssd_mobilenetv1_nhwc.js';
-import * as ui from '/js/ui.js';
-import * as utils from '/js/utils.js';
-import * as Yolo2Decoder from '/js/yolo2Decoder.js';
-import * as SsdDecoder from '/js/ssdDecoder.js';
+import {TinyYoloV2Nchw} from './tiny_yolov2_nchw.js';
+import {TinyYoloV2Nhwc} from './tiny_yolov2_nhwc.js';
+import {SsdMobilenetV1Nchw} from './ssd_mobilenetv1_nchw.js';
+import {SsdMobilenetV1Nhwc} from './ssd_mobilenetv1_nhwc.js';
+import * as ui from './ui.js';
+import * as utils from './utils.js';
+import * as Yolo2Decoder from './yolo2Decoder.js';
+import * as SsdDecoder from './ssdDecoder.js';
 
 const imgElement = document.getElementById('feedElement');
-imgElement.src = './images/dog_vacation.jpg';
+imgElement.src = '../images/dog_vacation.jpg';
 const camElement = document.getElementById('feedMediaElement');
 let modelName = '';
 let modelId = '';

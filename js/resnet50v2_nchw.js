@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, weightsOrigin} from './utils.js';
 
 // ResNet50 V2 model with 'nchw' input layout
 export class ResNet50V2Nchw {

@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, weightsOrigin} from './utils.js';
 
 // SqueezeNet 1.1 model with 'nchw' input layout
 export class SqueezeNetNchw {
