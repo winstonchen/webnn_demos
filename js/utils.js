@@ -4,11 +4,12 @@ import {numpy} from '/webnn_demos/js/numpy.js';
 import {addAlert} from '/webnn_demos/js/ui.js';
 
 export function weightsOrigin() {
-  if (location.hostname.toLowerCase().indexOf('github.io') > -1) {
-    return 'https://d3i5xkfad89fac.cloudfront.net';
-  } else {
-    return '..';
-  }
+  // if (location.hostname.toLowerCase().indexOf('github.io') > -1) {
+  //   return 'https://d3i5xkfad89fac.cloudfront.net';
+  // } else {
+  //   return '..';
+  // }
+  return '';
 }
 
 export function sizeOfShape(shape) {
