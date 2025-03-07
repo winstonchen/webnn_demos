@@ -1,20 +1,20 @@
 'use strict';
 
-import {ResNet50V1FP16Nchw} from './resnet50v1_fp16_nchw.js';
-import {EfficientNetFP16Nchw} from './efficientnet_fp16_nchw.js';
-import {MobileNetV2Nchw} from './mobilenet_nchw.js';
-import {MobileNetV2Nhwc} from './mobilenet_nhwc.js';
-import {SqueezeNetNchw} from './squeezenet_nchw.js';
-import {SqueezeNetNhwc} from './squeezenet_nhwc.js';
-import {ResNet50V2Nchw} from './resnet50v2_nchw.js';
-import {ResNet50V2Nhwc} from './resnet50v2_nhwc.js';
-import * as ui from './ui.js';
-import * as utils from './utils.js';
+import {ResNet50V1FP16Nchw} from '/webnn_demos/js/resnet50v1_fp16_nchw.js';
+import {EfficientNetFP16Nchw} from '/webnn_demos/js/efficientnet_fp16_nchw.js';
+import {MobileNetV2Nchw} from '/webnn_demos/js/mobilenet_nchw.js';
+import {MobileNetV2Nhwc} from '/webnn_demos/js/mobilenet_nhwc.js';
+import {SqueezeNetNchw} from '/webnn_demos/js/squeezenet_nchw.js';
+import {SqueezeNetNhwc} from '/webnn_demos/js/squeezenet_nhwc.js';
+import {ResNet50V2Nchw} from '/webnn_demos/js/resnet50v2_nchw.js';
+import {ResNet50V2Nhwc} from '/webnn_demos/js/resnet50v2_nhwc.js';
+import * as ui from '/webnn_demos/js/ui.js';
+import * as utils from '/webnn_demos/js/utils.js';
 
 const maxWidth = 380;
 const maxHeight = 380;
 const imgElement = document.getElementById('feedElement');
-imgElement.src = '../images/dog_vacation.jpg';
+imgElement.src = '/webnn_demos/images/dog_vacation.jpg';
 const camElement = document.getElementById('feedMediaElement');
 let modelName = '';
 let modelId = '';

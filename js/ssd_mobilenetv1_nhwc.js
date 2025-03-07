@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from './utils.js';
+import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/webnn_demos/js/utils.js';
 
 // SSD MobileNet V1 model with 'nhwc' layout, trained on the COCO dataset.
 export class SsdMobilenetV1Nhwc {
@@ -16,10 +16,10 @@ export class SsdMobilenetV1Nhwc {
     this.boxesShape_ = [1, 1917, 1, 4];
     this.scoresShape_ = [1, 1917, 91];
     this.weightsUrl_ = weightsOrigin() +
-      '/test-data/models/ssd_mobilenetv1_nhwc/weights';
+      '/webnn_demos/models/ssd_mobilenetv1_nhwc/weights';
     this.inputOptions = {
       inputLayout: 'nhwc',
-      labelUrl: './labels/coco_classes.txt',
+      labelUrl: '/webnn_demos/labels/coco_classes.txt',
       margin: [1, 1, 1, 1],
       mean: [127.5, 127.5, 127.5],
       std: [127.5, 127.5, 127.5],

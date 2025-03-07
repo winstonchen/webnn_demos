@@ -11,13 +11,13 @@ export class EfficientNetFP16Nchw {
     this.inputTensor_ = null;
     this.outputTensor_ = null;
     this.weightsUrl_ = weightsOrigin() +
-    '/models/efficientnet_fp16_nchw_optimized/weights/';
+    '/webnn_demos/models/efficientnet_fp16_nchw_optimized/weights/';
     this.inputOptions = {
       mean: [0.485, 0.456, 0.406],
       std: [0.229, 0.224, 0.225],
       norm: true,
       inputLayout: 'nchw',
-      labelUrl: '/labels/labels1000.txt',
+      labelUrl: '/webnn_demos/labels/labels1000.txt',
       inputShape: [1, 3, 224, 224],
     };
     this.outputShape_ = [1, 1000];

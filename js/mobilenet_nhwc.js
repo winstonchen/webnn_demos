@@ -14,12 +14,12 @@ export class MobileNetV2Nhwc {
     this.inputTensor_ = null;
     this.outputTensor_ = null;
     this.weightsUrl_ = weightsOrigin() +
-      '/models/mobilenetv2_nhwc/weights/';
+      '/webnn_demos/models/mobilenetv2_nhwc/weights/';
     this.inputOptions = {
       mean: [127.5, 127.5, 127.5],
       std: [127.5, 127.5, 127.5],
       inputLayout: 'nhwc',
-      labelUrl: '/labels/labels1001.txt',
+      labelUrl: '/webnn_demos/labels/labels1001.txt',
       inputShape: [1, 224, 224, 3],
     };
     this.outputShape_ = [1, 1001];

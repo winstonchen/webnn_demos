@@ -14,10 +14,10 @@ export class MobileNetV2Nchw {
     this.dataType_ = dataType;
     this.weightsUrl_ = weightsOrigin();
     if (this.dataType_ === 'float32') {
-      this.weightsUrl_ += '/models/mobilenetv2_nchw/weights/';
+      this.weightsUrl_ += '/webnn_demos/models/mobilenetv2_nchw/weights/';
     } else if (this.dataType_ === 'float16') {
       this.weightsUrl_ +=
-          '/models/mobilenetv2_fp16_nchw_optimized/weights/';
+          '/webnn_demos/models/mobilenetv2_fp16_nchw_optimized/weights/';
     } else {
       throw new Error(`Unsupported dataType: ${this.dataType_}`);
     }

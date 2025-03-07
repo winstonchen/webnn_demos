@@ -1,6 +1,6 @@
 'use strict';
 
-import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/js/utils.js';
+import {buildConstantByNpy, computePadding2DForAutoPad, weightsOrigin} from '/webnn_demos/js/utils.js';
 
 // Tiny Yolo V2 model with 'nchw' layout, trained on the Pascal VOC dataset.
 export class TinyYoloV2Nchw {
@@ -13,10 +13,10 @@ export class TinyYoloV2Nchw {
     this.deviceType_ = null;
     this.targetDataType_ = dataType;
     this.weightsUrl_ = weightsOrigin() +
-      '/models/tiny_yolov2_nchw/weights/';
+      '/webnn_demos/models/tiny_yolov2_nchw/weights/';
     this.inputOptions = {
       inputLayout: 'nchw',
-      labelUrl: '/labels/pascal_classes.txt',
+      labelUrl: '/webnn_demos/labels/pascal_classes.txt',
       margin: [1, 1, 1, 1],
       anchors: [1.08, 1.19, 3.42, 4.41, 6.63, 11.38, 9.42, 5.11, 16.62, 10.52],
       inputShape: [1, 3, 416, 416],
