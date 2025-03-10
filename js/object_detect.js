@@ -320,7 +320,10 @@ async function main() {
       await drawOutput(imgElement, results, labels);
       showPerfResult(medianComputeTime);
     } else if (inputType === 'camera') {
-      stream = await utils.getMediaStream("environment");
+      let cameraType = document.getElementById('camera-type');
+      let cameraValue = cameraType.value;
+      console.log(`user selected ${cameraValue} camera`);
+      stream = await utils.getMediaStream(cameraValue);
       camElement.srcObject = stream;
       stopRender = false;
       camElement.onloadeddata = await renderCamStream();
