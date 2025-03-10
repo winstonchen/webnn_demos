@@ -26,7 +26,7 @@ export class MobileNetV2Nchw {
       std: [0.229, 0.224, 0.225],
       norm: true,
       inputLayout: 'nchw',
-      labelUrl: '/labels/labels1000.txt',
+      labelUrl: '/webnn_demos/labels/labels1000.txt',
       inputShape: [1, 3, 224, 224],
     };
     this.outputShape_ = [1, 1000];
